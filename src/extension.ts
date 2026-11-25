@@ -200,10 +200,11 @@ class CustomSidebarViewProvider implements vscode.WebviewViewProvider {
     webviewView.webview.html = this.getHtmlContent(webviewView.webview, false);
 
     // This is called every second is decides which doom face to show in the webview
-    setInterval(() => {
+    const timer = setInterval(() => {
       webviewView.webview.html = this.getHtmlContent(webviewView.webview, true);
-      
     }, 1000);
+    // without this every reopen of the view stacks another timer writing to a dead webview
+    webviewView.onDidDispose(() => clearInterval(timer));
   }
 
   private getHtmlContent(webview: vscode.Webview, flag:boolean): string {

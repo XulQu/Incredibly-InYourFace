@@ -8,3 +8,7 @@ vsc-extension-quickstart.md
 **/.eslintrc.json
 **/*.map
 **/*.ts
+*.vsix
+assets/Preview-Vid.*
+assets/preview-img*
+assets/.DS_Store

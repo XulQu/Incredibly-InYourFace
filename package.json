@@ -2,13 +2,13 @@
   "name": "incredibly-in-your-face",
   "displayName": "Incredibly In Your Face",
   "description": "In Your Face, shows you Incredible 'Uncanny Faces' that correlate to the number of errors in your code!",
-  "version": "1.0.2",
+  "version": "6.6.6",
   "publisher": "VirejDasani",
   "homepage": "https://github.com/virejdasani",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/virejdasani/Incredibly-InYourFace"
+    "url": "https://github.com/XulQu/Incredibly-InYourFace"
   },
   "engines": {
     "vscode": "^1.61.0"
